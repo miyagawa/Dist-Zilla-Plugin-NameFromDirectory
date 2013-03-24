@@ -1,4 +1,6 @@
 Revision history for Dist::Zilla::Plugin::NameFromDirectory
 
 {{$NEXT}}
+
+0.01  2013-03-23 23:11:30 PDT
         - Initial release

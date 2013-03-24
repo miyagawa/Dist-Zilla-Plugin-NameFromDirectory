@@ -1,5 +1,5 @@
 {
-   "abstract" : "Blah blah blah",
+   "abstract" : "Guess distribution name from the current directory",
    "author" : [
       "Tatsuhiko Miyagawa <miyagawa@bulknews.net>"
    ],
@@ -26,6 +26,7 @@
       },
       "runtime" : {
          "requires" : {
+            "Dist::Zilla" : "4.3",
             "perl" : "5.008001"
          }
       },
@@ -36,6 +37,17 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/miyagawa/Dist-Zilla-Plugin-NameFromDirectory/issues"
+      },
+      "homepage" : "https://github.com/miyagawa/Dist-Zilla-Plugin-NameFromDirectory",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/miyagawa/Dist-Zilla-Plugin-NameFromDirectory.git",
+         "web" : "https://github.com/miyagawa/Dist-Zilla-Plugin-NameFromDirectory"
+      }
+   },
    "version" : "0.01"
 }
 
