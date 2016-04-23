@@ -5,15 +5,19 @@ our $VERSION = '0.03';
 use Moose;
 with 'Dist::Zilla::Role::NameProvider';
 
-use Path::Class;
+use Path::Tiny ();
 
 sub provide_name {
     my $self = shift;
 
     my $root = $self->zilla->root->absolute;
 
+    # Dist::Zilla v6 has excised Path::Class in favor of Path::Tiny
+    # make sure $root is a Path::Tiny object
+    $root = Path::Tiny->new("$root");
+
     # make sure it is a root dir, by checking -e dist.ini
-    return unless -e $root->file('dist.ini');
+    return unless $root->child('dist.ini')->exists;
 
     my $name = $root->basename;
     $name =~ s/(?:^(?:perl|p5)-|[\-\.]pm$)//x;
