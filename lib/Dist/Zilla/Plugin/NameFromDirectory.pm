@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::NameFromDirectory;
 use 5.008_001;
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use Moose;
 with 'Dist::Zilla::Role::NameProvider';

@@ -42,4 +42,4 @@ it under the same terms as Perl itself.
 
 # SEE ALSO
 
-[Dist::Zilla](http://search.cpan.org/perldoc?Dist::Zilla)
+[Dist::Zilla](https://metacpan.org/pod/Dist::Zilla)
